@@ -1,0 +1,49 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Giriş Sayfası</title>
+  <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+        <style>
+  body {
+    background-size: cover;
+   background-image: url("girissayfasi2.jpg");
+  }
+</style>
+<body>
+    <div class="jumbotron text-center">
+        <div class="text-success">
+
+    <form action="giris.php" method="POST" class="container1"> 
+            <?php  
+            if(isset($mesaj)){ echo $mesaj;}  
+            
+            ?> 
+            <h1>Kullanıcı Girişi</h1> </br>
+            <label for="username"><b>Kullanıcı adı</b></label>  </br>
+            <input type="text" placeholder="Kullanıcı adınızı giriniz" name="isim" required>
+            
+            
+            </br> 
+            <label for="password"><b>Password</b></label>
+            </br> 
+            <input type="password" placeholder="Şifrenizi Giriniz" name="sifre" required>
+            </br> 
+            <button type="submit" class="btn">Giriş Yap</button>
+            </br> 
+            <a href="kaydet.html">Kayıt Ol</a> 
+        </form>
+        <a href="https://github.com/ahmet-1963?tab=repositories">Github'a gitmek için tıklayın</a>
+        </div>
+</div>
+
+        </body>
+</html>
