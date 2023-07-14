@@ -1,2 +1,2 @@
-# web_odevi
-web odevi
+# Kebapçı_otomasyonu
+Kebapçı otomasyonu
